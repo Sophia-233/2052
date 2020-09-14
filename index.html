@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <html lang="en" >
 
@@ -21,6 +20,17 @@
   
   
   
+<style>
+#q1{
+  position:absolute;
+  left:200px;
+  top: 100px;
+}
+
+body{
+  background-image:
+url("https://www.canberrameditation.org/files/2017/10/sunset-birds-flying-sky-70577.jpg")}
+</style>
 
   
   
@@ -35,17 +45,18 @@
   Your browser does not support the audio tag.
 </audio>
 <button id="playme">Play Me</button>
+<input id="q1" data-correct="42 />"
   
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
   
       <script id="rendered-js" >
 let goodjob = document.getElementById("goodjob");
 
-function playGoodJOb(evt){
+function playGoodJob(evt){
   goodjob.play();
 }
 
-$("#playme").click()
+$("#playme").click(playGoodJob);
     </script>
 
   
@@ -54,4 +65,3 @@ $("#playme").click()
 
 </html>
  
-
